@@ -3,21 +3,21 @@
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
+    font-size:1.3rem;
+    color:white;
 }
 
 .navBarContainer .listCake {
     display:flex;
     justify-content:center;
-    gap:2rem;
-    width:20rem;
+    gap:1.5rem;
+    width:17rem;
     list-style-type:none;
 }
 
 .navBarContainer .listCake li {
     display:flex;
     align-items:center;
-    font-size:1.3rem;
-    color:white;
 }
 
 .navBarContainer .listCake li::before {
@@ -33,4 +33,19 @@
 
 .listCake li:nth-child(2)::before {
     content: '\1F4DC';
+}
+
+/*HAPPY CAKE*/
+
+.navBarContainer .divCake {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    width:10rem;
+}
+
+
+.navBarContainer .divCake::after {
+    content:'\1F370';
+    padding-left: 0.5rem;
 }

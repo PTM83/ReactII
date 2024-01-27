@@ -7,7 +7,7 @@ export const NavBarCake = () => {
                 <li>Home</li>
                 <li>Contacto</li>
             </ul>
-            <div>
+            <div className='divCake'>
                 Happy Cake
             </div>
         </nav>

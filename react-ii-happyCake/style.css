@@ -18,7 +18,7 @@ body {
     min-height:100vh;
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 4rem 1fr 3rem;
+    grid-template-rows: 3rem 1fr 3rem;
     grid-template-areas:
     'nav nav nav nav'
     'main main main main'

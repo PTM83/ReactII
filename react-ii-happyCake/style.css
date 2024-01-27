@@ -2,3 +2,42 @@
     padding:0;
     margin:0;
 }
+
+/*COLORES PRINCIPALES*/
+html {
+    --principalColor: rgb(220,53,70);
+}
+
+body {
+    max-width:1240px;
+    max-height:100%;
+    margin:0 2rem;
+}
+
+.container {
+    min-height:100vh;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 4rem 1fr 3rem;
+    grid-template-areas:
+    'nav nav nav nav'
+    'main main main main'
+    'footer footer footer footer'
+}
+
+nav, footer {
+    background-color: var(--principalColor);
+
+}
+
+nav {
+    grid-area:nav;
+}
+
+main {
+    grid-area:main;
+}
+
+footer {
+    grid-area:footer;
+}

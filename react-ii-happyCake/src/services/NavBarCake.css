@@ -1,0 +1,36 @@
+.navBarContainer {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navBarContainer .listCake {
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    width:20rem;
+    list-style-type:none;
+}
+
+.navBarContainer .listCake li {
+    display:flex;
+    align-items:center;
+    font-size:1.3rem;
+    color:white;
+}
+
+.navBarContainer .listCake li::before {
+    background-repeat:no-repeat;
+    background-position:0 50%;
+    content:'';
+    margin-right:0.5rem;
+}
+
+.listCake li:nth-child(1)::before {
+    content: '\1F3E0';
+}
+
+.listCake li:nth-child(2)::before {
+    content: '\1F4DC';
+}

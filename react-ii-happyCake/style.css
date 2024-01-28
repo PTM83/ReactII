@@ -1,6 +1,7 @@
 * {
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 
 /*COLORES PRINCIPALES*/
@@ -9,15 +10,20 @@ html {
 }
 
 body {
-    max-width:1240px;
+    max-width:100%;
+    min-width: 320px;
     max-height:100%;
     margin:0 2rem;
+    place-items:center;
 }
 
 .container {
     min-height:100vh;
+    width:calc(100% -4 rem);
     display:grid;
-    grid-template-columns: repeat(4,1fr);
+    /*(grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto-fit, minmax(3rem,1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
     grid-template-rows: 3rem 1fr 3rem;
     grid-template-areas:
     'nav nav nav nav'

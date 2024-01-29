@@ -9,7 +9,7 @@ export const HomePage = () => {
                 <h3> El lugar de los pasteles felices</h3>
             </header>
             <picture className="hpImage">
-                <img src='../src/image/cake-slice.png' alt='Cake Picture'/>
+                <img src='./src/image/cake-slice.png' alt='Cake Picture'/>
             </picture>
         </main>
     )

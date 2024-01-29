@@ -47,7 +47,7 @@ export const ContactPage = () => {
 
                 <div className='CPdiv'>
                     <label>Descripción del pedido:</label>
-                    <textarea rows='4' required maxlength='500' value={message} onChange={handleMessage}>
+                    <textarea rows='4' required maxLength='500' value={message} onChange={handleMessage}>
                     </textarea>
                     <button type='submit' className='CPbutton'>Enviar</button>
                 </div>

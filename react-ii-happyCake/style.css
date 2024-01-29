@@ -19,7 +19,7 @@ body {
 
 .container {
     min-height:100vh;
-    width:calc(100% -4 rem);
+    width:calc(100% - 4rem);
     display:grid;
     /*(grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(auto-fit, minmax(3rem,1fr));*/

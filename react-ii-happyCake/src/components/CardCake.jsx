@@ -3,24 +3,24 @@ import { dataCake } from '../services/cupCakeData.js'
 
 export const CardCake = () => {
 
-console.log(dataCake)
+// console.log(dataCake)
 
     return (
     <section className='card-gallery'>
         {dataCake.slice(0,12).map((cake) => (
             <div className='Card-container' key={cake.id}>
                 <picture className='pictureCard'>
-                    <img src="" alt='Imagen de Prueba' />
+                    <img src="./src/image/cake-slice.png" alt='Imagen de Prueba' />
                 </picture>
 
                 <div>
                     <header>{cake.name}</header>
-                    <small>SubTitle</small>
+                    <small>{cake.productType}</small>
                     <p>{cake.description}</p>
                 </div>
 
-                <div>
-                    <i>{cake.price}</i>
+                <div className='priceCake'>
+                    <i> ${cake.price}</i>
                 </div>
             </div>
         ))

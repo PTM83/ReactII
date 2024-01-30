@@ -6,16 +6,39 @@
 }
 
 .Card-container {
-    border:0.1rem solid black;
+    display:flex;
+    gap:0.5rem;
+    border:0.1rem solid rgba(220,53,70, .3);
+    border-radius: .25rem;
     flex: 1 1 auto;
     min-width: 300px;
     max-width: 400px;
+    padding:0.5rem;
+
+    min-height:120px;
+    max-height:150px;
+    box-shadow: 0 0 10px 10px rgba(220,53,70, .1);
 }
 
-.Card-container .pictureCard {
-    border: 1px solid red;
+div > header{
+    padding-bottom:2px;
+    font-weight: 700;
+    text-transform:uppercase;
 }
+
+div > small, p {
+    padding-bottom:2px;
+}
+
+div > p {
+    padding-top:3px;
+}
+
 .pictureCard img {
-    width:200px;
+    width:80px;
     height:100%;
+}
+
+.Card-container > .priceCake > i {
+    display:inline-block;
 }

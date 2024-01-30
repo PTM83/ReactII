@@ -17,6 +17,7 @@ body {
     place-items:center;
 }
 
+/*CONTENEDOR PRINCIPAL*/
 .container {
     min-height:100vh;
     width:calc(100% - 4rem);
@@ -24,20 +25,24 @@ body {
     /*(grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(auto-fit, minmax(3rem,1fr));*/
     grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
-    grid-template-rows: 3rem 1fr 3rem;
+    grid-template-rows: 50px 20rem 1fr 50px;
     grid-template-areas:
     'nav nav nav nav'
+    'header header header header'
     'main main main main'
     'footer footer footer footer'
 }
 
 nav, footer {
     background-color: var(--principalColor);
-
 }
 
 nav {
     grid-area:nav;
+}
+
+.headerCake {
+    grid-area:header;
 }
 
 main {

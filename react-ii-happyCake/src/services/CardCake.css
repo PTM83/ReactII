@@ -1,0 +1,21 @@
+.card-gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    gap:2rem;
+}
+
+.Card-container {
+    border:0.1rem solid black;
+    flex: 1 1 auto;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.Card-container .pictureCard {
+    border: 1px solid red;
+}
+.pictureCard img {
+    width:200px;
+    height:100%;
+}

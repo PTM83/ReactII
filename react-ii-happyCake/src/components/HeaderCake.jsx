@@ -17,6 +17,10 @@ export const HeaderCake = () => {
                 Carousels
             </div>
 
+            <div className='SideBar'>
+                SideBar
+                <input type='text' placeholder='Search Cake' autoFocus ></input>
+            </div>
         </header>
     )
 }

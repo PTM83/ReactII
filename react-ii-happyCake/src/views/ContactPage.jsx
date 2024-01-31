@@ -51,9 +51,7 @@ export const ContactPage = () => {
                     </textarea>
                     <button type='submit' className='CPbutton'>Enviar</button>
                 </div>
-
             </form>
-
         </main>
     )
 }

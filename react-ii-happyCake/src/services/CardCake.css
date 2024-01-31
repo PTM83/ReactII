@@ -5,6 +5,7 @@
     gap:2rem;
 }
 
+/*Contiene todo el contenido*/
 .Card-container {
     display:flex;
     gap:0.5rem;
@@ -18,27 +19,68 @@
     min-height:120px;
     max-height:150px;
     box-shadow: 0 0 10px 10px rgba(220,53,70, .1);
+
+    /*Animation Part*/
+    /*position:relative
+    transition-duration:2s;*/
+    transition-property:scale, background;
+    transition-timing-function: ease-out;
 }
 
-div > header{
+/*ANIMATION*/
+.Card-container:hover {
+    scale:1.2;
+}
+
+article > header{
     padding-bottom:2px;
     font-weight: 700;
     text-transform:uppercase;
 }
 
-div > small, p {
+article > small, p {
     padding-bottom:2px;
 }
 
-div > p {
+article > p {
     padding-top:3px;
 }
 
 .pictureCard img {
     width:80px;
     height:100%;
+    object-fit:cover;
 }
 
 .Card-container > .priceCake > i {
     display:inline-block;
 }
+
+.shoppingCart button {
+    background-color:white;
+    border:0.1rem solid rgba(225,225,225, .5);
+    box-shadow: 0 0 5px 5px rgba(220,53,70, .1);
+    border-radius: 0.25rem;
+}
+
+.shoppingCart img {
+    width:1.2rem;
+}
+
+/*.card-gallery {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card-gallery ul {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:1rem;
+}
+
+.pictureCard img {
+    width:80px;
+    height:100%;
+}*/

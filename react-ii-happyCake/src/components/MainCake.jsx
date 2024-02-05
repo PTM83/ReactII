@@ -5,6 +5,8 @@ import { ContactPage } from '../views/ContactPage.jsx'
 import { HeaderCake } from '../components/HeaderCake.jsx'
 import { HeaderCakeContact } from '../components/HeaderCakeContact.jsx'
 
+//Import Context
+import { ContextSell } from '../context/ContextSell.jsx'
 
 //Información a mostrar en Main
 
@@ -12,10 +14,10 @@ export const MainCake =() => {
     return (
         <Routes>
             <Route path='/' element={
-            <>
-                <HeaderCake />
-                <HomePage />
-            </>
+                <ContextSell>
+                    <HeaderCake />
+                    <HomePage />
+                </ContextSell>
             } />
             <Route path='/contact-me' element={
             <>

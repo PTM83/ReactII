@@ -1,6 +1,6 @@
 //Import CSS
-import '../services/MainCake.css'
-import '../services/CardCake.css'
+import '../assets/MainCake.css'
+import '../assets/CardCake.css'
 //Import Components
 import { CardCake } from '../components/CardCake.jsx'
 

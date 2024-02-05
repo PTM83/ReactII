@@ -1,6 +1,6 @@
 import { useState } from 'react';
 //IMPORT CSS
-import '../services/MainCake.css'
+import '../assets/MainCake.css'
 
 export const ContactPage = () => {
 

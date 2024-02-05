@@ -1,7 +1,12 @@
+import { useContext } from 'react'
+import { cakeContext } from '../context/ContextSell.jsx'
 //Import CSS
-import '../services/HeaderCake.css'
+import '../assets/HeaderCake.css'
 
 export const HeaderCake = () => {
+
+    const { countProduct } = useContext(cakeContext)
+    console.log('Data from eachCart', countProduct)
 
     return (
         <header className='headerCake'>
@@ -19,6 +24,12 @@ export const HeaderCake = () => {
 
             <div className='SideBar'>
                 SideBar
+                 <picture className='shoppingCart'>
+                    <button>
+                        <img src='../src/image/shoppingcart.png' alt='Carro de compra'/>
+                    </button>
+                 </picture>
+
                 <input type='text' placeholder='Search Cake' autoFocus ></input>
             </div>
         </header>

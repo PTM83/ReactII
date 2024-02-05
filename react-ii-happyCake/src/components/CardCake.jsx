@@ -1,9 +1,22 @@
-//Import Data
-import { dataCake } from '../services/cupCakeData.js'
+import { useState, useContext, useEffect } from 'react'
+//Capstone Hook
+import { useProductCount } from '../services/functionCake.js'
+//Import context
+import { cakeContext } from '../context/ContextSell.jsx'
 
 export const CardCake = () => {
 
-// console.log(dataCake)
+//Se extrae el count y la función toggleButton
+
+const { count, toggleButton } = useProductCount();
+
+const { dataCake, setCountProduct } = useContext(cakeContext);
+//Se almacena la información captada al momento de seleccionar tipo de producto
+
+useEffect(() => {
+    setCountProduct(count)
+//     console.log(count)
+}, [count] )
 
     return (
     <section className='card-gallery'>
@@ -22,11 +35,13 @@ export const CardCake = () => {
                  <div className='priceCake'>
                      <i> ${cake.price}</i>
                  </div>
+
                  <picture className='shoppingCart'>
-                    <button>
+                    <button onClick={() => toggleButton(cake.id)}>
                         <img src='../src/image/shoppingcart.png' alt='Carro de compra'/>
                     </button>
                  </picture>
+
              </div>
          ))}
 

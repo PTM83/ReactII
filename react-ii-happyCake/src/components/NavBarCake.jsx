@@ -1,7 +1,7 @@
 //Import Elements
 import { Link } from 'react-router-dom';
 //Import CSS
-import '../services/NavBarCake.css'
+import '../assets/NavBarCake.css'
 
 //Importante agregar el tag <Link> </Link>
 

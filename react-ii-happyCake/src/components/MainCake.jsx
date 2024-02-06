@@ -12,19 +12,21 @@ import { ContextSell } from '../context/ContextSell.jsx'
 
 export const MainCake =() => {
     return (
-        <Routes>
-            <Route path='/' element={
-                <ContextSell>
+        <ContextSell>
+            <Routes>
+                <Route path='/' element={
+                <>
                     <HeaderCake />
                     <HomePage />
-                </ContextSell>
-            } />
-            <Route path='/contact-me' element={
-            <>
-                <HeaderCakeContact />
-                <ContactPage />
-            </>
-            } />
-        </Routes>
+                </>
+                } />
+                <Route path='/contact-me' element={
+                <>
+                    <HeaderCakeContact />
+                    <ContactPage />
+                </>
+                } />
+            </Routes>
+        </ContextSell>
     )
 }

@@ -1,16 +1,10 @@
 import { useState, useContext, useEffect } from 'react'
-//Capstone Hook
-import { useProductCount } from '../services/functionCake.js'
 //Import context
 import { cakeContext } from '../context/ContextSell.jsx'
 
 export const CardCake = () => {
 
-//Se extrae el count y la función toggleButton
-
-const { count, toggleButton } = useProductCount();
-
-const { dataCake, setCountProduct } = useContext(cakeContext);
+const { dataCake, setCountProduct, count, toggleButton } = useContext(cakeContext);
 //Se almacena la información captada al momento de seleccionar tipo de producto
 
 useEffect(() => {
@@ -40,8 +34,8 @@ useEffect(() => {
                     <button onClick={() => toggleButton(cake.id)}>
                         <img src='../src/image/shoppingcart.png' alt='Carro de compra'/>
                     </button>
+                    <small> {count[cake.id]?.count || 0} </small>
                  </picture>
-
              </div>
          ))}
 

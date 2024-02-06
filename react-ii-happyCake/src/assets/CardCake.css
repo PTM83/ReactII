@@ -35,7 +35,7 @@
 article > header{
     padding-bottom:2px;
     font-weight: 700;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 article > small, p {
@@ -54,6 +54,20 @@ article > p {
 
 .Card-container > .priceCake > i {
     display:inline-block;
+}
+
+.shoppingCart {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.shoppingCart small {
+    text-align:center;
+    background-color:rgba(220,53,70, .4);
+    border-radius: 50%;
+    font-weight:700;
+    font-size:1rem;
 }
 
 .shoppingCart button {

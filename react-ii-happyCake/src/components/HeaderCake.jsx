@@ -2,11 +2,20 @@ import { useContext } from 'react'
 import { cakeContext } from '../context/ContextSell.jsx'
 //Import CSS
 import '../assets/HeaderCake.css'
+//Import hook
+import { sumComponent } from '../hooks/functionCake.js'
 
 export const HeaderCake = () => {
 
     const { countProduct } = useContext(cakeContext)
-    console.log('Data from eachCart', countProduct)
+//     console.log('Data from each Cart', countProduct)
+
+    const { sum } = sumComponent(countProduct);
+//     let valuesProduct = Object.values(countProduct);
+//     let sumProduct = valuesProduct.map(contar => contar.count)
+//
+//     console.log('values', valuesProduct)
+//     console.log('sumar', sum)
 
     return (
         <header className='headerCake'>
@@ -24,10 +33,11 @@ export const HeaderCake = () => {
 
             <div className='SideBar'>
                 SideBar
-                 <picture className='shoppingCart'>
+                 <picture className='shoppingCartHeader'>
                     <button>
                         <img src='../src/image/shoppingcart.png' alt='Carro de compra'/>
                     </button>
+                    <i className='smallHeader'>{sum}</i>
                  </picture>
 
                 <input type='text' placeholder='Search Cake' autoFocus ></input>

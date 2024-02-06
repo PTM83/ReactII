@@ -81,3 +81,19 @@
     height:1.56rem;
     color:black;
 }
+
+.shoppingCartHeader {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.shoppingCartHeader img {
+    width:2rem;
+}
+
+.shoppingCartHeader i {
+    font-size:1.5rem;
+    font-weight:700;
+}
